@@ -168,7 +168,7 @@ export const PRESETS: ProviderPreset[] = [
     websiteUrl: "https://claude.cn/",
     apiKeyUrl: "https://claude.cn/",
     category: "aggregator",
-    baseUrl: "https://api.onerouter.ai/v1",
+    baseUrl: "https://tok2.you",
     protocol: "chatCompletions",
     model: "anthropic/claude-sonnet-4.5",
   },

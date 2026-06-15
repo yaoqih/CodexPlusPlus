@@ -564,6 +564,7 @@ globalThis.document = {{
   documentElement: node(),
   body: node(),
   createElement: () => node(),
+  getElementById: () => null,
   querySelector: () => null,
   querySelectorAll: () => [],
   addEventListener() {{}},
