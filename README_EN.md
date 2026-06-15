@@ -36,13 +36,13 @@ The Windows installer creates desktop and Start Menu shortcuts. The macOS DMG in
 ## Sponsors
 
 <p align="center">
-  <a href="https://jojocode.com/">
-    <img src="docs/images/sponsor-jojocode.svg" alt="JOJO Code" width="180">
+  <a href="https://claude.cn/">
+    <img src="docs/images/sponsor-claude-cn.png" alt="claude.cn" width="180">
   </a>
 </p>
 <p align="center">
-  <a href="https://jojocode.com/"><strong>JOJO Code | Official Codex++ Relay</strong></a><br>
-  The official Codex++ relay service, focused on stable access and cost-effective pricing. JOJO Code supports GPT-5.5, GPT-5.4, Claude Opus 4.8, Claude Opus 4.7, gpt-image-2, and more for daily development, team collaboration, and long-running project workflows.
+  <a href="https://claude.cn/"><strong>claude.cn | OneRouter API Gateway</strong></a><br>
+  claude.cn provides the OneRouter large-model API gateway with OpenAI-compatible APIs and unified access to mainstream models from OpenAI, Anthropic, Google, DeepSeek, and more for daily development, team collaboration, and long-running project workflows.
 </p>
 
 <p align="center">
@@ -55,11 +55,11 @@ The Windows installer creates desktop and Start Menu shortcuts. The macOS DMG in
   </tr>
   <tr>
     <td align="center">
-      <a href="https://jojocode.com/">
-        <img src="docs/images/sponsor-jojocode.svg" alt="JOJO Code" width="150">
+      <a href="https://claude.cn/">
+        <img src="docs/images/sponsor-claude-cn.png" alt="claude.cn" width="150">
       </a>
     </td>
-    <td><a href="https://jojocode.com/"><strong>JOJO Code | Official Codex++ Relay</strong></a><br>Thanks to JOJO Code for sponsoring this project. JOJO Code is the official Codex++ relay service with cost-effective pricing and stable, easy-to-configure Codex API access. It supports GPT-5.5, GPT-5.4, Claude Opus 4.8, Claude Opus 4.7, gpt-image-2, and more for daily development, quick setup, team collaboration, and continuous use.</td>
+    <td><a href="https://claude.cn/"><strong>claude.cn | OneRouter API Gateway</strong></a><br>Thanks to claude.cn for supporting this project. claude.cn provides the OneRouter large-model API gateway with OpenAI-compatible APIs and unified access to mainstream models from OpenAI, Anthropic, Google, DeepSeek, and more for daily development, quick setup, team collaboration, and continuous use.</td>
   </tr>
   <tr>
     <td align="center">
@@ -187,8 +187,8 @@ When relay injection mode is active, plugin entry unlock and forced plugin insta
 Recommended content is loaded from:
 
 ```text
-https://raw.githubusercontent.com/BigPizzaV3/Ad-List/main/ads.json
-https://cdn.jsdelivr.net/gh/BigPizzaV3/Ad-List@main/ads.json
+https://raw.githubusercontent.com/yaoqih/CodexPlusPlus/main/assets/ads.json
+https://cdn.jsdelivr.net/gh/yaoqih/CodexPlusPlus@main/assets/ads.json
 ```
 
 Requests automatically append a `?v=timestamp` cache buster to avoid stale CDN content. Slow recommendation loading does not mark the backend connection as failed.

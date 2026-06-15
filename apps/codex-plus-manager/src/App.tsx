@@ -1728,32 +1728,32 @@ function OverviewScreen({
   const health = healthItems(overview);
   return (
     <>
-      <Panel className="jojocode-overview">
+      <Panel className="featured-relay-overview">
         <CardContent>
-          <div className="jojocode-overview-layout">
-            <div className="jojocode-overview-main">
-              <div className="jojocode-overview-mark">
+          <div className="featured-relay-overview-layout">
+            <div className="featured-relay-overview-main">
+              <div className="featured-relay-overview-mark">
                 <Network className="h-5 w-5" />
               </div>
               <div>
-                <span className="eyebrow">官方中转站</span>
-                <h2>JOJO Code</h2>
+                <span className="eyebrow">API 网关</span>
+                <h2>claude.cn</h2>
                 <p>
-                  Codex++ 官方中转站，主打稳定接入和划算价格，支持 GPT-5.5、GPT-5.4、Claude Opus 4.8、Claude Opus 4.7、gpt-image-2 等模型与图像能力。
+                  claude.cn 提供 OneRouter 大模型 API 网关，兼容 OpenAI 接口，支持 OpenAI、Anthropic、Google、DeepSeek 等主流模型统一接入。
                 </p>
               </div>
             </div>
-            <div className="jojocode-overview-side">
-              <div className="jojocode-model-tags">
-                <span>GPT-5.5</span>
-                <span>GPT-5.4</span>
-                <span>Opus 4.8</span>
-                <span>Opus 4.7</span>
-                <span>gpt-image-2</span>
+            <div className="featured-relay-overview-side">
+              <div className="featured-relay-model-tags">
+                <span>OpenAI</span>
+                <span>Anthropic</span>
+                <span>Google</span>
+                <span>DeepSeek</span>
+                <span>OpenAI 兼容</span>
               </div>
-              <Button onClick={() => void actions.openExternalUrl("https://jojocode.com/")}>
+              <Button onClick={() => void actions.openExternalUrl("https://claude.cn/")}>
                 <ExternalLink className="h-4 w-4" />
-                打开 JOJO Code
+                打开 claude.cn
               </Button>
             </div>
           </div>
@@ -2353,7 +2353,7 @@ function RecommendationsScreen({ ads, actions }: { ads: AdsResult | null; action
           <div className="recommend-hero">
             <div>
               <strong>{ads ? `已加载 ${items.length} 条推荐` : "尚未加载推荐内容"}</strong>
-              <span>内容来自 BigPizzaV3/Ad-List，分为赞助商推荐和普通推荐。</span>
+              <span>内容来自 yaoqih/CodexPlusPlus 仓库内广告列表，分为赞助商推荐和普通推荐。</span>
             </div>
             <Button onClick={() => void actions.refreshAds()}>
               <RefreshCw className="h-4 w-4" />

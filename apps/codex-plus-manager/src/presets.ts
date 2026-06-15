@@ -163,14 +163,14 @@ export const PRESETS: ProviderPreset[] = [
 
   // ── 聚合/中转 ──
   {
-    id: "jojocode",
-    name: "JOJO Code",
-    websiteUrl: "https://jojocode.com/",
-    apiKeyUrl: "https://jojocode.com/",
+    id: "claude-cn",
+    name: "OneRouter (claude.cn)",
+    websiteUrl: "https://claude.cn/",
+    apiKeyUrl: "https://claude.cn/",
     category: "aggregator",
-    baseUrl: "https://jojocode.com/v1",
-    protocol: "responses",
-    model: "gpt-5.5",
+    baseUrl: "https://api.onerouter.ai/v1",
+    protocol: "chatCompletions",
+    model: "anthropic/claude-sonnet-4.5",
   },
   {
     id: "siliconflow",

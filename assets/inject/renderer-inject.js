@@ -2064,8 +2064,8 @@
 
   async function directFetchCodexPlusAds() {
     const urls = [
-      "https://raw.githubusercontent.com/BigPizzaV3/Ad-List/main/ads.json",
-      "https://cdn.jsdelivr.net/gh/BigPizzaV3/Ad-List@main/ads.json",
+      "https://raw.githubusercontent.com/yaoqih/CodexPlusPlus/main/assets/ads.json",
+      "https://cdn.jsdelivr.net/gh/yaoqih/CodexPlusPlus@main/assets/ads.json",
     ];
     let lastError = null;
     const cacheBust = Date.now();

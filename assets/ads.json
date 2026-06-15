@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-15",
+  "ads": [
+    {
+      "id": "claude-cn-onerouter",
+      "type": "sponsor",
+      "title": "claude.cn｜OneRouter API 网关",
+      "description": "claude.cn 提供 OneRouter 大模型 API 网关，兼容 OpenAI 接口，支持 OpenAI、Anthropic、Google、DeepSeek 等主流模型统一接入。",
+      "url": "https://claude.cn/",
+      "expires_at": "2029-06-15",
+      "highlights": ["OpenAI 兼容", "统一 API", "多模型接入", "适合 Codex 工作流"]
+    },
+    {
+      "id": "packycode-token-bridge",
+      "type": "sponsor",
+      "title": "PackyCode",
+      "description": "稳定可靠，服务及时，价格优惠。",
+      "url": "https://www.packyapi.com/register?aff=huangmo",
+      "expires_at": "2026-06-18",
+      "highlights": ["TOKEN 中转", "低延迟高可用", "7×24 小时技术支持"]
+    },
+    {
+      "id": "0029-token-bridge",
+      "type": "sponsor",
+      "title": "Token云桥｜0029.org",
+      "description": "专业 AI 密钥 TOKEN 中转站，提供 ChatGPT、Claude、Gemini、Codex、GPT-5 等 API 密钥代购、代充、中转与稳定调用服务。",
+      "url": "https://www.0029.org/?promo=AFF11F",
+      "expires_at": "2026-06-18",
+      "highlights": ["AI 密钥代购", "TOKEN 中转", "低延迟高可用", "订单可追踪", "7×24 小时技术支持"]
+    },
+    {
+      "id": "apikey-fun-ai-relay",
+      "type": "sponsor",
+      "title": "APIKEY.FUN",
+      "description": "开放、稳定、高性价比的全球主流大模型 AI 中转站，支持 Claude、OpenAI、Gemini 等热门模型 API 中转。",
+      "url": "https://apikey.fun/register?aff=CODEX",
+      "expires_at": "2026-06-22",
+      "highlights": ["Claude / OpenAI / Gemini", "稳定中转", "专属优惠"]
+    },
+    {
+      "id": "runapi-openrouter-alternative",
+      "type": "sponsor",
+      "title": "RunAPI",
+      "description": "高效稳定的 API OpenRouter 平替平台，一个 API Key 即可访问 OpenAI、Claude、Gemini、DeepSeek、Grok 等 150+ 主流模型。",
+      "url": "https://runapi.co/register?aff=AWJq",
+      "expires_at": "2026-06-22",
+      "highlights": ["OpenRouter 平替", "150+ 主流模型", "兼容 Claude Code", "高稳定性"]
+    }
+  ]
+}
