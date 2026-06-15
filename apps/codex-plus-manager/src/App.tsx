@@ -1268,10 +1268,12 @@ export function App() {
       targetRelayName: selectedBeforeSave.name,
       previousActiveRelayId,
     });
+    const selectedAfterSave = activeRelayProfile(switchSettings);
+    const command = relayProfileSwitchCommand(selectedAfterSave);
     setRelaySwitching(true);
     try {
       const result = await run(() =>
-        call<RelaySwitchResult>("switch_relay_profile", {
+        call<RelaySwitchResult>(command, {
           request: { settings: switchSettings, previousActiveRelayId },
         }),
       );
@@ -5059,6 +5061,10 @@ function relayProfileSwitchValidation(profile: RelayProfile): string | null {
   }
   if (profile.relayMode !== "official" || !authJsonHasOpenAiApiKey(profile.authContents)) return null;
   return "官方混合 API 不应在 auth.json 中保存 OPENAI_API_KEY。请清理此供应商的 auth.json 后再切换。";
+}
+
+function relayProfileSwitchCommand(_profile: RelayProfile): "switch_relay_profile" {
+  return "switch_relay_profile";
 }
 
 function authJsonHasOpenAiApiKey(contents: string): boolean {
