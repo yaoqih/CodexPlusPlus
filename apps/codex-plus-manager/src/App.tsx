@@ -311,6 +311,10 @@ type RelaySwitchResult = CommandResult<{
   relay: RelayPayload;
 }>;
 
+type SettingsBackfillResult = CommandResult<{
+  settings: BackendSettings;
+}>;
+
 type RelayProfileTestResult = CommandResult<{
   httpStatus: number;
   endpoint: string;
@@ -1198,6 +1202,21 @@ export function App() {
     return result && isSuccessStatus(result.status) ? result.models : null;
   };
 
+  const snapshotActiveRelayFilesBeforeSwitch = async (next: BackendSettings, previousActiveRelayId: string) => {
+    if (!previousActiveRelayId) return next;
+    const result = await run(() =>
+      call<SettingsBackfillResult>("backfill_relay_profile_from_live", {
+        request: { settings: next, profileId: previousActiveRelayId },
+      }),
+    );
+    if (!result) return null;
+    if (!isSuccessStatus(result.status)) {
+      showNotice("供应商切换", result.message, result.status);
+      return null;
+    }
+    return normalizeSettings(result.settings);
+  };
+
   const switchOfficialMode = async () => {
     const switched = await clearRelayInjection(true);
     if (!switched) return;
@@ -1222,6 +1241,9 @@ export function App() {
       showNotice("供应商配置已关闭", "当前不会写入 Codex config.toml / auth.json。打开供应商配置总开关后再切换。", "failed");
       return;
     }
+    const snapshottedSettings = await snapshotActiveRelayFilesBeforeSwitch(switchSettings, previousActiveRelayId);
+    if (!snapshottedSettings) return;
+    switchSettings = snapshottedSettings;
     const targetBeforeSnapshot = activeRelayProfile(switchSettings);
     logDiagnostic("switchRelayProfile.start", {
       currentRelayId: settingsForm.activeRelayId,
